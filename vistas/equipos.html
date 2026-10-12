@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Equipos - PuntoAlivio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .products-section { scroll-margin-top: 90px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">PuntoAlivio</div>
+        
+        <!-- Botón de Hamburguesa para celular -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li>
+                <li><a href="equipos.html" class="active">Equipos</a></li>
+                <li><a href="terapia.html">Terapia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="page-header">
+        <div class="page-cursive">Catálogo Completo</div>
+        <h1 class="page-title">Equipos Individuales</h1>
+        <p class="page-desc">Explora nuestros artículos de fisioterapia disponibles para venta individual, organizados por categoría para facilitar tu búsqueda.</p>
+    </section>
+
+    <!-- ZONA 1: Terapia Térmica (#cat-termica) -->
+    <section class="products-section" id="cat-termica" style="padding-top: 20px;">
+        <h2 class="section-title" style="text-align: left; padding-left: 5%; border-bottom: 2px solid var(--color-accent-coral); padding-bottom: 10px; margin-bottom: 30px;">Terapia Térmica (Compresas)</h2>
+        <div class="products-page-grid" style="padding-top: 0;">
+            
+            <!-- Pack Único de Compresas -->
+            <div class="product-card" id="equipo-pack-compresas">
+                <img src="../img/compresas.png" alt="Pack de Compresas">
+                <h4 class="product-title">Pack de Compresas de Semillas (3 pzas)</h4>
+                <p class="product-category">Terapia Térmica - Relleno Natural</p>
+                <p class="product-price">S/ 70.00</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Pack de Compresas de Semillas', 'S/ 70.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ZONA 2: Ejercicio y Rehabilitación (#cat-rehab) -->
+    <section class="products-section" id="cat-rehab" style="padding-top: 20px;">
+        <h2 class="section-title" style="text-align: left; padding-left: 5%; border-bottom: 2px solid var(--color-accent-green); padding-bottom: 10px; margin-bottom: 30px;">Ejercicio y Rehabilitación</h2>
+        <div class="products-page-grid" style="padding-top: 0;">
+            
+            <!-- Ligas Abiertas (TPE) -->
+            <div class="product-card" id="equipo-bandas-tpe">
+                <img src="../img/ligas.png" alt="Bandas TPE Yoga">
+                <h4 class="product-title">Bandas de Resistencia TPE Abiertas</h4>
+                <p class="product-category">Rehabilitación - 3 Niveles</p>
+                <p class="product-price">S/ 35.00 c/u</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Banda de Resistencia TPE Abierta', 'S/ 35.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Ligas Cerradas -->
+            <div class="product-card" id="equipo-bandas-set5">
+                <img src="../img/ligascerradas.png" alt="Set 5 Bandas">
+                <h4 class="product-title">Set de 5 Ligas Elásticas Cerradas</h4>
+                <p class="product-category">Entrenamiento Piernas/Glúteos</p>
+                <p class="product-price">S/ 45.00</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Set de 5 Ligas Cerradas', 'S/ 45.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Pelotas Yoga -->
+            <div class="product-card" id="equipo-pelotas-yoga">
+                <img src="../img/pelotas.png" alt="Pelotas de Yoga">
+                <h4 class="product-title">Pelota de Yoga</h4>
+                <p class="product-category">Entrenamiento de Core y Estabilidad</p>
+                <p class="product-price">S/ 5.00</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Pelota de Yoga', 'S/ 5.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Extensor Pie -->
+            <div class="product-card" id="equipo-arco-plantar">
+                <img src="../img/pie.png" alt="Entrenador de Pies">
+                <h4 class="product-title">Extensor de Pie (Arco Plantar)</h4>
+                <p class="product-category">Rehabilitación Pie Plano/Alineación</p>
+                <p class="product-price">S/ 60.00</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Extensor de Pie (Arco Plantar)', 'S/ 60.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Arcilla -->
+            <div class="product-card" id="equipo-arcilla-mano">
+                <img src="../img/arcilla.png" alt="Arcilla de Rehabilitación">
+                <h4 class="product-title">Arcilla Terapéutica para Mano</h4>
+                <p class="product-category">Fortalecimiento de Agarre</p>
+                <p class="product-price">S/ 40.00 c/u</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Arcilla Terapéutica', 'S/ 40.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+            
+            <!-- Kit Agarre (Mantenido como estaba) -->
+            <div class="product-card" id="equipo-kit-agarre">
+                <img src="../img/mano.png" alt="Kit Fuerza Mano">
+                <h4 class="product-title">Kit de Fuerza: Aro, Extensor y Pelotas</h4>
+                <p class="product-category">Rehabilitación Motricidad Fina</p>
+                <p class="product-price">S/ 40.00</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Kit de Fuerza para Mano', 'S/ 40.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ZONA 3: Descarga y Soporte (#cat-alivio) -->
+    <section class="products-section" id="cat-alivio" style="padding-top: 20px;">
+        <h2 class="section-title" style="text-align: left; padding-left: 5%; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 30px;">Descarga Muscular, Soporte y Tecnología</h2>
+        <div class="products-page-grid" style="padding-top: 0;">
+            
+            <!-- Cinta Kinesio -->
+            <div class="product-card" id="equipo-cinta-kinesio">
+                <img src="../img/kinesio.png" alt="Cinta Kinesiológica">
+                <h4 class="product-title">Cinta Kinesiológica Deportiva (Rollo)</h4>
+                <p class="product-category">Soporte Muscular y Articular</p>
+                <p class="product-price">S/ 35.00 c/u</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Rollo Cinta Kinesiológica', 'S/ 35.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+
+            <!-- Pack de Bolas de Masaje -->
+            <div class="product-card" id="equipo-bola-masaje">
+                <img src="../img/Bola.png" alt="Bolas de Masaje">
+                <h4 class="product-title">Pack de 3 Bolas de Masaje</h4>
+                <p class="product-category">Descarga Fascial / Relajación</p>
+                <p class="product-price">S/ 70.00</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Pack de 3 Bolas de Masaje', 'S/ 70.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+
+            <!-- NUEVO: EMS Facial -->
+            <div class="product-card" id="equipo-ems-facial">
+                <img src="../img/ems.png" alt="EMS Facial">
+                <h4 class="product-title">Masajeador EMS Facial</h4>
+                <p class="product-category">Electroterapia / Estética</p>
+                <p class="product-price">S/ 45.00</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Masajeador EMS Facial', 'S/ 45.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+
+            <!-- NUEVO: TENS -->
+            <div class="product-card" id="equipo-tens">
+                <img src="../img/tens.png" alt="Electroestimulador TENS">
+                <h4 class="product-title">Electroestimulador TENS Portátil</h4>
+                <p class="product-category">Electroterapia / Alivio del Dolor</p>
+                <p class="product-price">Consultar</p>
+                <button class="btn-wa-full-pkg" onclick="pedirProducto('Electroestimulador TENS', 'Cotización')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Botón Flotante Global -->
+    <a href="#" class="whatsapp-float" onclick="consultaGeneral()" title="Escríbenos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 class="footer-logo">PuntoAlivio</h3>
+                <p class="footer-desc">Tu aliado en recuperación y bienestar. Equipos y accesorios de fisioterapia de alta calidad, seleccionados por profesionales para acelerar tu mejora.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio del Catálogo</a></li>
+                    <li><a href="paquetes.html">Paquetes de Recuperación</a></li>
+                    <li><a href="equipos.html">Equipos Individuales</a></li>
+                    <li><a href="terapia.html">Guías de Terapia</a></li>
+                    <li style="margin-top: 15px;">
+                        <a href="https://enlinea.indecopi.gob.pe/reclamavirtual/#/iniciar-reclamo" target="_blank" style="color: #ea7a54; font-weight: 600; font-size: 13px;">
+                            <i class="fa-solid fa-book-open" style="margin-right: 5px;"></i> Libro de Reclamaciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atención al Paciente</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 929 783 902</li>
+                    <li><i class="fa-regular fa-clock"></i> Lunes a Sábado<br>8:00 am - 8:00 pm</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PuntoAlivio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

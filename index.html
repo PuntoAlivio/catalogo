@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuntoAlivio - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PuntoAlivio</div>
+        
+        <!-- Botón de Hamburguesa para celular -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="vistas/paquetes.html">Paquetes</a></li>
+                <li><a href="vistas/equipos.html">Equipos</a></li>
+                <li><a href="vistas/terapia.html">Terapia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-carousel">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+
+        <button class="carousel-control prev" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-control next" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <!-- Slide 1: Mano -->
+        <div class="slide active">
+            <div class="hero-content">
+                <p class="hero-cursive">Recuperación Integral</p>
+                <h1 class="hero-title">PAQUETE<br>DE MANO</h1>
+                <p class="hero-desc">Todo lo que necesitas para una rehabilitación segura y progresiva en casa, seleccionado por fisioterapeutas profesionales.</p>
+                <ul class="hero-items-list">
+                    <li><i class="fa-solid fa-check"></i> Extensor de dedos</li>
+                    <li><i class="fa-solid fa-check"></i> Pelota de ejercicios</li>
+                    <li><i class="fa-solid fa-check"></i> Aro de resistencia para agarre</li>
+                    <li><i class="fa-solid fa-check"></i> Bolsa de transporte</li>
+                </ul>
+                <button class="btn-outline" onclick="pedirPaquete('Paquete de Mano', 'S/ 80.00')">
+                    <i class="fa-brands fa-whatsapp"></i> Consultar Paquete
+                </button>
+            </div>
+            <div class="hero-image">
+                <a href="vistas/paquetes.html#paquete-mano">
+                    <img src="img/mano.png" alt="Paquete Mano" style="cursor: pointer;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 2: Compresas -->
+        <div class="slide">
+            <div class="hero-content">
+                <p class="hero-cursive">Terapia Térmica</p>
+                <h1 class="hero-title">SET DE COMPRESAS<br>DE SEMILLAS</h1>
+                <p class="hero-desc">Compresas de tela 100% natural diseñadas para calentarse en el microondas. Alivian el dolor y tensión muscular mediante calor profundo.</p>
+                <ul class="hero-items-list">
+                    <li><i class="fa-solid fa-check"></i> Compresa Cervical</li>
+                    <li><i class="fa-solid fa-check"></i> Compresa Dorsal</li>
+                    <li><i class="fa-solid fa-check"></i> Compresa Lumbar</li>
+                </ul>
+                <button class="btn-outline" onclick="pedirPaquete('Set de Compresas', 'S/ 80.00')">
+                    <i class="fa-brands fa-whatsapp"></i> Consultar Paquete
+                </button>
+            </div>
+            <div class="hero-image">
+                <a href="vistas/paquetes.html#paquete-compresas">
+                    <img src="img/compresas.png" alt="Set Compresas" style="cursor: pointer;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 3: Bandas -->
+        <div class="slide">
+            <div class="hero-content">
+                <p class="hero-cursive">Fortalecimiento Total</p>
+                <h1 class="hero-title">SET DE 5 BANDAS<br>DE RESISTENCIA</h1>
+                <p class="hero-desc">Juego completo con tensión progresiva (2.27 a 18.14 kg) ideal para el entrenamiento de piernas, pantorrillas, glúteos, brazos y rehabilitación.</p>
+                <ul class="hero-items-list">
+                    <li><i class="fa-solid fa-check"></i> 5 niveles de resistencia progresiva</li>
+                    <li><i class="fa-solid fa-check"></i> Grosores exactos desde 0.35mm hasta 1.1mm</li>
+                    <li><i class="fa-solid fa-check"></i> Material elástico de alta durabilidad</li>
+                    <li><i class="fa-solid fa-check"></i> Ideal para recuperar fuerza muscular en casa</li>
+                </ul>
+                <button class="btn-outline" onclick="pedirPaquete('Set de 5 Bandas de Resistencia', 'S/ 35.00')">
+                    <i class="fa-brands fa-whatsapp"></i> Consultar Paquete
+                </button>
+            </div>
+            <div class="hero-image">
+                <a href="vistas/paquetes.html#paquete-bandas">
+                    <img src="img/ligas.png" alt="Set de Bandas" style="cursor: pointer;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías conectadas con #anclas a equipos.html -->
+    <section class="categories">
+        <div class="category-card cat-1">
+            <span class="cat-cursive">Natural</span>
+            <img src="img/categoriasompresa.png" alt="Terapia Térmica">
+            
+       <!--- <img src="https://placehold.co/300x250/f7ede2/333333?text=Compresas" alt="Terapia Térmica">-->
+            <h3>Terapia Térmica</h3>
+            <a href="vistas/equipos.html#cat-termica" class="btn-link">Ver Catálogo</a>
+            <a href="#" class="btn-wa-small" onclick="consultarCategoria('Terapia Térmica (Compresas)')"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
+        </div>
+        <div class="category-card cat-2">
+            <img src="img/Bandascate.png" alt="Rehabilitación">
+             <!---<img src="https://placehold.co/300x250/dce5df/333333?text=Bandas+y+Rehab" alt="Rehabilitación">-->
+            <h3>Ejercicio & Rehab</h3>
+            <a href="vistas/equipos.html#cat-rehab" class="btn-link">Ver Catálogo</a>
+            <a href="#" class="btn-wa-small" onclick="consultarCategoria('Ejercicio y Rehabilitación')"><i class="fa-brands fa-whatsapp"></i> Consultar</a>
+        </div>
+        <div class="category-card cat-4">
+            <span class="cat-cursive">Alivio</span>
+            <img src="img/catotape.png" alt="Equipos de Alivio">
+            <h3>Descarga y Soporte</h3>
+            <a href="vistas/equipos.html#cat-alivio" class="btn-link">Ver Catálogo</a>
+            <a href="#" class="btn-wa-small" onclick="consultarCategoria('Descarga Muscular y Soporte')">
+                <i class="fa-brands fa-whatsapp"></i> Consultar
+            </a>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <p class="cta-cursive">No dejes tu salud al azar</p>
+        <h2 class="cta-title">¿Necesitas Ayuda Profesional?</h2>
+        <p class="cta-desc">El uso de equipos en casa es un excelente complemento, pero una evaluación presencial es fundamental. Si presentas dolor crónico o una lesión reciente, te recomendamos visitar a los expertos.</p>
+        <a href="https://wa.me/51900273390?text=Hola,%20quisiera%20agendar%20una%20cita%20en%20su%20centro%20de%20fisioterapia." target="_blank" class="btn-centro">
+            <i class="fa-brands fa-whatsapp"></i> Agendar Cita
+        </a>
+    </section>
+
+    <!-- Botón Flotante Global -->
+    <a href="#" class="whatsapp-float" onclick="consultaGeneral()" title="Escríbenos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 class="footer-logo">PuntoAlivio</h3>
+                <p class="footer-desc">Tu aliado en recuperación y bienestar. Equipos y accesorios de fisioterapia de alta calidad, seleccionados por profesionales para acelerar tu mejora.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio del Catálogo</a></li>
+                    <li><a href="vistas/paquetes.html">Paquetes de Recuperación</a></li>
+                    <li><a href="vistas/equipos.html">Equipos Individuales</a></li>
+                    <li><a href="vistas/terapia.html">Guías de Terapia</a></li>
+                    <li style="margin-top: 15px;">
+                        <a href="https://enlinea.indecopi.gob.pe/reclamavirtual/#/iniciar-reclamo" target="_blank" style="color: #ea7a54; font-weight: 600; font-size: 13px;">
+                            <i class="fa-solid fa-book-open" style="margin-right: 5px;"></i> Libro de Reclamaciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atención al Paciente</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 929 783 902</li>
+                    <li><i class="fa-regular fa-clock"></i> Lunes a Sábado<br>8:00 am - 8:00 pm</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PuntoAlivio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

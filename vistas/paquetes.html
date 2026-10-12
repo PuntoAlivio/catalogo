@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes de Rehabilitación</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Archivo CSS Centralizado -->
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Fisio Hogar</div>
+        
+        <!-- Botón de Hamburguesa para celular -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="terapia.html">Terapia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="page-cursive">Recuperación Integral</div>
+        <h1 class="page-title">Paquetes de Rehabilitación</h1>
+        <p class="page-desc">Kits cuidadosamente diseñados por nuestros fisioterapeutas para acelerar tu recuperación desde casa mediante ejercicio y terapia térmica.</p>
+    </section>
+
+    <section class="packages-grid">
+        <!-- Paquete 1: Mano (Sin Ortopedia) -->
+        <div class="package-card" id="paquete-mano">
+            <div class="pkg-img-container">
+                <img src="../img/banermao.png" alt="Paquete Mano">
+            </div>
+            <div class="pkg-content">
+                <h2 class="pkg-title">Rehabilitación de Mano</h2>
+                <ul class="pkg-items">
+                    <li><i class="fa-solid fa-check"></i> Extensor de dedos de silicona</li>
+                    <li><i class="fa-solid fa-check"></i> Set de 3 pelotas terapéuticas</li>
+                    <li><i class="fa-solid fa-check"></i> Aro de resistencia para agarre</li>
+                    <li><i class="fa-solid fa-check"></i> Compresa de gel mini (Frío/Calor)</li>
+                </ul>
+                <div class="pkg-footer">
+                    <div class="pkg-price-row">
+                        <span class="pkg-price-label">Precio del Kit</span>
+                        <span class="pkg-price">S/ 85.00</span>
+                    </div>
+                    <button class="btn-wa-full-pkg" onclick="pedirPaquete('Paquete Rehabilitación de Mano', 'S/ 85.00')"><i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paquete 2: Compresas -->
+        <div class="package-card" id="paquete-compresas">
+            <div class="pkg-img-container">
+                <span class="pkg-tag">Terapia Térmica</span>
+                <img src="../img/compresasbaner.png" alt="Set Compresas">
+            </div>
+            <div class="pkg-content">
+                <h2 class="pkg-title">Set Compresas de Semillas</h2>
+                <ul class="pkg-items">
+                    <li><i class="fa-solid fa-check"></i> Compresa Cervical ergonómica</li>
+                    <li><i class="fa-solid fa-check"></i> Compresa Dorsal amplia</li>
+                    <li><i class="fa-solid fa-check"></i> Compresa Lumbar adaptable</li>
+                    <li><i class="fa-solid fa-check"></i> Tela especial para microondas</li>
+                </ul>
+                <div class="pkg-footer">
+                    <div class="pkg-price-row">
+                        <span class="pkg-price-label">Precio del Set</span>
+                        <span class="pkg-price">S/ 90.00</span>
+                    </div>
+                    <button class="btn-wa-full-pkg" onclick="pedirPaquete('Set de Compresas de Semillas', 'S/ 90.00')">
+                        <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paquete 3: Bandas -->
+        <div class="package-card" id="paquete-bandas">
+            <div class="pkg-img-container">
+                <img src="../img/banerligas.png" alt="Set de Bandas">
+            </div>
+            <div class="pkg-content">
+                <h2 class="pkg-title">Set 5 Bandas Resistencia</h2>
+                <ul class="pkg-items">
+                    <li><i class="fa-solid fa-check"></i> 5 niveles (2.27 a 18.14 kg)</li>
+                    <li><i class="fa-solid fa-check"></i> Grosores exactos (0.35mm a 1.1mm)</li>
+                    <li><i class="fa-solid fa-check"></i> Trabaja piernas, glúteos y brazos</li>
+                    <li><i class="fa-solid fa-check"></i> Material de alta durabilidad</li>
+                </ul>
+                <div class="pkg-footer">
+                    <div class="pkg-price-row">
+                        <span class="pkg-price-label">Precio del Set</span>
+                        <span class="pkg-price">S/ 35.00</span>
+                    </div>
+                    <button class="btn-wa-full-pkg" onclick="pedirPaquete('Set de 5 Bandas de Resistencia', 'S/ 35.00')">
+                        <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta 4: Próximamente -->
+        <div class="package-card" style="background-color: #fcfcfc;">
+            <div class="pkg-img-container" style="background-color: #e8e8e8;">
+                <img src="https://placehold.co/400x300/e8e8e8/aaaaaa?text=Próximamente" alt="Próximamente" style="opacity: 0.5;">
+            </div>
+            <div class="pkg-content" style="text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                <h2 class="pkg-title" style="color: #999; margin-bottom: 5px;">Kit Movilidad</h2>
+                <p style="color: #aaa; font-size: 13px; line-height: 1.5; margin-top: 10px;">Nuestros especialistas están diseñando un nuevo kit para mejorar tu rango de movimiento.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 5: Próximamente -->
+        <div class="package-card" style="background-color: #fcfcfc;">
+            <div class="pkg-img-container" style="background-color: #e8e8e8;">
+                <img src="https://placehold.co/400x300/e8e8e8/aaaaaa?text=Próximamente" alt="Próximamente" style="opacity: 0.5;">
+            </div>
+            <div class="pkg-content" style="text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                <h2 class="pkg-title" style="color: #999; margin-bottom: 5px;">Kit Postura</h2>
+                <p style="color: #aaa; font-size: 13px; line-height: 1.5; margin-top: 10px;">Pronto lanzaremos un paquete de ejercicios enfocado en la ergonomía y cuidado de la espalda.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 6: Próximamente -->
+        <div class="package-card" style="background-color: #fcfcfc;">
+            <div class="pkg-img-container" style="background-color: #e8e8e8;">
+                <img src="https://placehold.co/400x300/e8e8e8/aaaaaa?text=Próximamente" alt="Próximamente" style="opacity: 0.5;">
+            </div>
+            <div class="pkg-content" style="text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                <h2 class="pkg-title" style="color: #999; margin-bottom: 5px;">Kit Estiramiento</h2>
+                <p style="color: #aaa; font-size: 13px; line-height: 1.5; margin-top: 10px;">Estamos preparando las mejores herramientas para facilitar la descarga muscular en casa.</p>
+            </div>
+        </div>
+    </section>
+<section class="cta-banner">
+        <p class="cta-cursive">No dejes tu salud al azar</p>
+        <h2 class="cta-title">¿Necesitas Ayuda Profesional?</h2>
+        <p class="cta-desc">El uso de equipos en casa es un excelente complemento, pero una evaluación presencial es fundamental. Si presentas dolor crónico o una lesión reciente, te recomendamos visitar a los expertos.</p>
+        <a href="https://wa.me/51900273390?text=Hola,%20quisiera%20agendar%20una%20cita%20en%20su%20centro%20de%20fisioterapia." target="_blank" class="btn-centro">
+            <i class="fa-brands fa-whatsapp"></i> Agendar Cita
+        </a>
+    </section>
+    <!-- Botón Flotante Global -->
+    <a href="#" class="whatsapp-float" onclick="consultaGeneral()" title="Escríbenos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 class="footer-logo">Fisio Hogar</h3>
+                <p class="footer-desc">Tu aliado en recuperación y bienestar. Equipos y accesorios de fisioterapia de alta calidad, seleccionados por profesionales para acelerar tu mejora.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="categorias.html">Categoríass</a></li>
+                    <li><a href="terapia.html">Terapia</a></li>
+                    <li style="margin-top: 15px;">
+                        <a href="https://enlinea.indecopi.gob.pe/reclamavirtual/#/iniciar-reclamo" target="_blank" style="color: #ea7a54; font-weight: 600; font-size: 13px;">
+                            <i class="fa-solid fa-book-open" style="margin-right: 5px;"></i> Libro de Reclamaciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atención al Paciente</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 +51 929 783 902</li>
+                    <li><i class="fa-regular fa-clock"></i> Lunes a Sábado<br>8:00 am - 8:00 pm</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fisio Hogar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
